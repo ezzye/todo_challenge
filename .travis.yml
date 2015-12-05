@@ -4,6 +4,7 @@ script:
 language: node_js
 node_js:
   - "0.10"
+  # - "5.0"
 before_script:
   - bower install
   - "export DISPLAY=:99.0"
