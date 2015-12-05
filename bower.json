@@ -1,0 +1,25 @@
+{
+  "name": "todo_challenge",
+  "description": "angular toto example",
+  "main": "index.js",
+  "authors": [
+    "Ezzy Elliott <ezzy.elliott@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ezzye/todo_challenge",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "html5-boilerplate": "~5.2.0"
+  }
+}

@@ -1,12 +1,52 @@
 # Todo Challenge
 
+
+Approach
+------
+
+1. Use BDD with Protractor for e2e tests and Karma for unit tests.
+2. Use Angular to build client code.
+3. Build incrementally using SOLID principles
+
+
+Initial Requirement
+-------
+
+Front-end features:
+ * Task (text) input form
+ * Display list of tasks
+ * Need additional actions
+    * to update, click on task and over-write,
+    * delete tasks, click on 'x' and remove task from list and
+    * click on select box to mark task as complete
+
+Steps
+-----
+
+1. Set up Karma and Protractor
+2. Write e2e and unit tests for first two features
+3. Set-up Angular
+4. Write code to make tests past and then refactor
+
+
+Set-up Karma
+------
+`npm init`
+`npm install --save-dev bower`
+`bower init`
+`npm install --save-dev grunt`
+`npm install --save-dev grunt-contrib-jshint`
+`npm install --save-dev grunt-contrib-watch`
+
+
+
 * Deadline: submit completed pull request by 9am on Monday
 * You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript
 
 Steps
 -------
 
-1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan 
+1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan
 2. Fork this repo, and clone to your local machine
 3. Complete the following challenge:
 
@@ -64,7 +104,7 @@ Don't worry about deployment, and make sure you read the CONTRIBUTING.md when su
 
 ## CI
 
-Read the `.travis.yml` if any of the steps below don't make sense! 
+Read the `.travis.yml` if any of the steps below don't make sense!
 
 * Make sure you have set up `npm test` in your `package.json` so that it runs your Karma tests
 * Make sure you have your Protractor config file at `e2e/conf.js`
