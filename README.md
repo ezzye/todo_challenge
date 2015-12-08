@@ -23,20 +23,14 @@ Front-end features:
 Steps
 -----
 
-1. Set up Karma and Protractor
-2. Write e2e and unit tests for first two features
-3. Set-up Angular
-4. Write code to make tests past and then refactor
+1. [Set up Karma and Protractor](https://github.com/angular/angular-seed)
+2. Sketch out html
+3. Write e2e and unit tests for first two features
+4. Set-up Angular
+5. Write code to make tests past and then refactor
 
 
-Set-up Karma
-------
-`npm init`
-`npm install --save-dev bower`
-`bower init`
-`npm install --save-dev grunt`
-`npm install --save-dev grunt-contrib-jshint`
-`npm install --save-dev grunt-contrib-watch`
+
 
 
 

@@ -1,7 +1,30 @@
 <!doctype html>
-<html>
+<html ng-app="todoapp">
 <head>
-  <script src="js/app.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/todoappController.js"></script>
+  <title>To Do Challenge</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body></body>
+<body ng-controller="todoappController as todoappCtrl" >
+<form class="form-horizontal" name="enterTodo">
+  <input type="text" ng-model="todoappCtrl.todo" required>
+  <button class="btn" ng-click="todoappCtrl.addTodo()" ng-disabled = "enterTodo.$invalid">Add Todo</button></form> <button class="btn" ng-click="todoappCtrl.clearDoneTodos()">Remove Done Tasks</button>
+<br>
+<tr>T A S K S</tr>
+<div ng-repeat = "item in todoappCtrl.todos"  >
+<tr><span ng-click="todoappCtrl.removeTodo(item)"> [x] </span> <span ng-class="{'done' :item.done }"   > {{item.todo}} </span><input type="checkbox" ng-model="item.done"></tr>
+</div>
+
+
+</body>
 </html>

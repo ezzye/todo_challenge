@@ -1,0 +1,10 @@
+[
+  {
+    "todo": "Yet another task",
+    "done": false
+  },
+  {
+    "todo": "One more task",
+    "done": true
+  }
+]
